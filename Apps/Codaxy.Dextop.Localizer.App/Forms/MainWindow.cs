@@ -672,7 +672,7 @@ namespace Codaxy.Dextop.Localizer.Windows.Forms
             dgvNew.Refresh();
         }
 
-        private void btnSelectAll_Click(object sender, EventArgs e)
+        private void btnCheckAll_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dgvNew.Rows)
             {

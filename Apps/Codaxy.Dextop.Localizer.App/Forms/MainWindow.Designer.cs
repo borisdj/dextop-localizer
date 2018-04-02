@@ -81,7 +81,7 @@
             this.btEnvironment = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
             this.btGoogle = new System.Windows.Forms.Button();
-            this.btnSelectAll = new System.Windows.Forms.Button();
+            this.btnCheckAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -624,22 +624,22 @@
             this.btGoogle.UseVisualStyleBackColor = true;
             this.btGoogle.Click += new System.EventHandler(this.btGoogle_Click);
             // 
-            // btnSelectAll
+            // btnCheckAll
             // 
-            this.btnSelectAll.Location = new System.Drawing.Point(620, 56);
-            this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectAll.TabIndex = 39;
-            this.btnSelectAll.Text = "Select All";
-            this.btnSelectAll.UseVisualStyleBackColor = true;
-            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
+            this.btnCheckAll.Location = new System.Drawing.Point(620, 56);
+            this.btnCheckAll.Name = "btnCheckAll";
+            this.btnCheckAll.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckAll.TabIndex = 39;
+            this.btnCheckAll.Text = "Check All";
+            this.btnCheckAll.UseVisualStyleBackColor = true;
+            this.btnCheckAll.Click += new System.EventHandler(this.btnCheckAll_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 604);
-            this.Controls.Add(this.btnSelectAll);
+            this.Controls.Add(this.btnCheckAll);
             this.Controls.Add(this.btGoogle);
             this.Controls.Add(this.btEnvironment);
             this.Controls.Add(this.btClose);
@@ -738,7 +738,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btGoogle;
-        private System.Windows.Forms.Button btnSelectAll;
+        private System.Windows.Forms.Button btnCheckAll;
     }
 }
 
