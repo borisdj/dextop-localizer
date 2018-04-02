@@ -676,7 +676,7 @@ namespace Codaxy.Dextop.Localizer.Windows.Forms
         {
             foreach (DataGridViewRow row in dgvNew.Rows)
             {
-                var currQty = row.Cells["IsChecked"].Value = true;
+                var currQty = row.Cells[0].Value = true;
             }
         }
     }
