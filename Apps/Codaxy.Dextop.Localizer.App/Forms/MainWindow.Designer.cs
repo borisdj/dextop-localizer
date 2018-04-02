@@ -81,6 +81,7 @@
             this.btEnvironment = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
             this.btGoogle = new System.Windows.Forms.Button();
+            this.btnSelectAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -128,8 +129,8 @@
             // 
             // lbStatus
             // 
-            this.lbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbStatus.FormattingEnabled = true;
             this.lbStatus.Location = new System.Drawing.Point(12, 513);
             this.lbStatus.Name = "lbStatus";
@@ -211,9 +212,9 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(265, 83);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -472,8 +473,8 @@
             // 
             // tbOriginalText
             // 
-            this.tbOriginalText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbOriginalText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbOriginalText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOriginalText.Location = new System.Drawing.Point(266, 25);
             this.tbOriginalText.Name = "tbOriginalText";
@@ -513,8 +514,8 @@
             // 
             // tbInputFiles
             // 
-            this.tbInputFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.tbInputFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tbInputFiles.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbInputFiles.Location = new System.Drawing.Point(12, 25);
             this.tbInputFiles.Multiline = true;
@@ -524,8 +525,8 @@
             this.tbInputFiles.TabIndex = 0;
             this.tbInputFiles.Text = resources.GetString("tbInputFiles.Text");
             this.tTip.SetToolTip(this.tbInputFiles, "Use # to place comments\r\nUse / suffix to denote folders\r\nUse - prefix to denote f" +
-                    "iles and folders to ignore\r\n\r\nExample:\r\n\r\nclient/js/\r\nclient/cache/cm.js\r\n-clien" +
-                    "t/js/locale/\r\n\r\nforms.js\r\n");
+        "iles and folders to ignore\r\n\r\nExample:\r\n\r\nclient/js/\r\nclient/cache/cm.js\r\n-clien" +
+        "t/js/locale/\r\n\r\nforms.js\r\n");
             // 
             // btSimpleSelect
             // 
@@ -623,11 +624,22 @@
             this.btGoogle.UseVisualStyleBackColor = true;
             this.btGoogle.Click += new System.EventHandler(this.btGoogle_Click);
             // 
+            // btnSelectAll
+            // 
+            this.btnSelectAll.Location = new System.Drawing.Point(620, 56);
+            this.btnSelectAll.Name = "btnSelectAll";
+            this.btnSelectAll.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectAll.TabIndex = 39;
+            this.btnSelectAll.Text = "Select All";
+            this.btnSelectAll.UseVisualStyleBackColor = true;
+            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 604);
+            this.Controls.Add(this.btnSelectAll);
             this.Controls.Add(this.btGoogle);
             this.Controls.Add(this.btEnvironment);
             this.Controls.Add(this.btClose);
@@ -726,6 +738,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btGoogle;
+        private System.Windows.Forms.Button btnSelectAll;
     }
 }
 

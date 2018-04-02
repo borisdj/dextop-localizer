@@ -671,5 +671,10 @@ namespace Codaxy.Dextop.Localizer.Windows.Forms
             googleTranslate.ShowDialog();
             dgvNew.Refresh();
         }
+
+        private void btnSelectAll_Click(object sender, EventArgs e)
+        {
+            dgvNew.SelectAll();
+        }
     }
 }
