@@ -674,7 +674,10 @@ namespace Codaxy.Dextop.Localizer.Windows.Forms
 
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
-            dgvNew.SelectAll();
+            foreach (DataGridViewRow row in dgvNew.Rows)
+            {
+                var currQty = row.Cells["IsChecked"].Value = true;
+            }
         }
     }
 }
